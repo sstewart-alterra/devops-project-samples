@@ -4,6 +4,7 @@ steps:
 - script: |
     dotnet restore
     dotnet build --configuration Release
+  workingDirectory: dotnet/aspnetcore/functionApp/Application/SampleFunctionApp
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
