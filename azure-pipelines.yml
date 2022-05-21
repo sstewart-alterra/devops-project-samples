@@ -7,6 +7,7 @@ steps:
   workingDirectory: dotnet/aspnetcore/functionApp/Application/SampleFunctionApp
 - task: DotNetCoreCLI@2
   inputs:
+    workingDirectory: dotnet/aspnetcore/functionApp/Application/SampleFunctionApp
     command: publish
     arguments: '--configuration Release --output publish_output'
     projects: '*.csproj'
